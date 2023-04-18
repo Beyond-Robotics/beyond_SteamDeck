@@ -4,9 +4,9 @@ export PATH=$HOME/.local/podman/bin:$PATH
 xhost +si:localuser:$USER
 
 
-## Running shell script with joy teleoperation roslaunch in ubuntu 20.04 distrobox image
-SCRIPT_PATH=@@REPO_PATH@@/shell_scripts/ros_part/joy_teleop.sh
-distrobox enter ubuntu-20-04 -- ${SCRIPT_PATH}
+## Running florence (virtual keyboard) in ubuntu 20.04 distrobox image
+KEYBOARD_CONFIG=@@REPO_PATH@@/configs/florence.conf
+distrobox enter ubuntu-20-04 -- florence -u ${KEYBOARD_CONFIG}
 
 ## Killing terminal left after the script finished executing (needed only when the .desktop file has option Terminal set to True)
 # kill -9 $PPID
