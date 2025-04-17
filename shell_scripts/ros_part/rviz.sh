@@ -1,11 +1,11 @@
 #!/bin/bash
-export ROS_MASTER_URI=http://master.lan:11311
+export ROS_MASTER_URI=http://pi5:11311
 export ROS_IP=$(hostname -I | xargs)
 source /opt/ros/noetic/setup.bash
 
 ## Launching teleoperation nodes with custom config for steam deck axes mapping
 CONFIG_FILE=@@REPO_PATH@@/configs/steam_deck_config.yaml
-roslaunch leo_teleop joy_teleop.launch joy_config_file:=${CONFIG_FILE} &
+roslaunch talos_teleop joy_teleop.launch joy_config_file:=${CONFIG_FILE} &
 LAUNCH_BACK_PID=$!
 
 ## Running Rviz with config file provided as command line argument
