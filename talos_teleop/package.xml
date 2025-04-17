@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>talos_teleop</name>
+  <version>0.0.1</version>
+  <description>
+    Scripts and launch files for Talos Rover teleoperation
+  </description>
+
+  <maintainer email="an.spanos@gmail.com">Antonis Spanos</maintainer>
+  <author email="an.spanos@gmail.com">Antonis Spanos</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>joy</exec_depend>
+  <exec_depend>teleop_twist_joy</exec_depend>
+  <exec_depend>teleop_twist_keyboard</exec_depend>
+
+</package>
