@@ -19,8 +19,7 @@ sudo apt-get install -y \
     ros-${ROS_DISTRO}-teleop-twist-joy \
     ros-${ROS_DISTRO}-teleop-twist-keyboard \
     ros-${ROS_DISTRO}-rviz \
-    ros-${ROS_DISTRO}-rqt-image-view \
-    xterm
+    ros-${ROS_DISTRO}-rqt-image-view
 
 # Check for Florence virtual keyboard (used in florence.sh)
 if ! command -v florence &> /dev/null; then
