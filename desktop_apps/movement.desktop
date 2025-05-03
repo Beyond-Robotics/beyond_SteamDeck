@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=Talos Movement
-Exec='@@REPO_PATH@@/shell_scripts/desktop_part/talos_movement.sh'
-Icon=@@REPO_PATH@@/icons/favicon.ico
+Exec='/home/deck/beyond_SteamDeck/shell_scripts/desktop_part/talos_movement.sh'
+Icon=/home/deck/beyond_SteamDeck/icons/favicon.ico
 Terminal=False

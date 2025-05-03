@@ -1,10 +1,10 @@
 #!/bin/bash
-export ROS_MASTER_URI=http://pi5:11311
+export ROS_MASTER_URI=http://192.168.2.200:11311
 export ROS_IP=$(hostname -I | xargs)
-source /opt/ros/noetic/setup.bash
+source ~/beyond_SteamDeck/devel/setup.bash
 
 ## Launching teleoperation nodes with custom config for steam deck axes mapping
-CONFIG_FILE=@@REPO_PATH@@/configs/steam_deck_config.yaml
+CONFIG_FILE=/home/deck/beyond_SteamDeck/configs/steam_deck_config.yaml
 roslaunch talos_teleop joy_teleop.launch joy_config_file:=${CONFIG_FILE} &
 LAUNCH_BACK_PID=$!
 

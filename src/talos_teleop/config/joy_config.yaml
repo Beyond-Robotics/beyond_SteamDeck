@@ -2,10 +2,10 @@ axis_linear:
   x: 1
   y: 0
 scale_linear:
-  x: 0.4
-  y: 0.4
+  x: 1
+  y: 0
 axis_angular:
   yaw: 3
 scale_angular:
-  yaw: 1.2
+  yaw: 1
 enable_button: 5
